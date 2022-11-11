@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo da aba</title>
+    <style>body{background-color: black;} .pag{color: white;font-size: 1.5rem;}</style>
+</head>
+<body>
+    <div class="pag">
+        <script>
+            num = prompt("Insira um número: ");
+            num = parseInt(num);
+            listaDecres(num);
+
+            function listaDecres(num){
+                while(num > 0){
+                    document.write(num + "<br>");
+                    num = num - 1;
+                }
+            }
+            document.write("########### <br>");
+            AteNum = prompt("Insira outro número: ");
+            AteNum = parseInt(AteNum);
+            fizz();
+
+            var cont = 1;
+
+            function fizz(){
+            for(i=1; i<=AteNum; i++){
+                if (i % 3 == 0){
+                    document.write(i + "<br>");
+                }
+                else{
+                    document.write("fizz <br>");
+                }}}
+            
+        
+        </script>
+    </div>
+</body>
+</html>

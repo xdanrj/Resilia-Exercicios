@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo da aba</title>
+    <style>body{background-color: black;} .pag{color: white;font-size: 1.5rem;}</style>
+</head>
+<body>
+    <div class="pag">
+        <script>
+            tm=0, tf=0, tsalariom=0, tsalariof=0, cont=1, salario=0;
+                while(cont<=2){
+                    var nome = prompt("Nome: ");
+                    var sexo = prompt("Sexo: ");
+                    var salario = prompt("Salario: ");
+                    salario = parseFloat(salario);
+
+                    if(sexo=="m"){
+                        tm = tm + 1;
+                        tsalariom = tsalariom + salario;
+                    }
+                    else if(sexo=="f"){
+                        tf = tf + 1;
+                        tsalariof = tsalariof + salario;
+                    }
+                    cont++;
+                    }
+                    
+                    document.write("Total feminino: "+tf+"<br>");
+                    document.write("Total salario feminino: "+tsalariof+"<br>");
+                    document.write("Total masculino: "+tm+"<br>");
+                    document.write("Total salario masculino: "+tsalariom+"<br>");
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black; 
+        }
+        .pag{
+            color: white;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="pag">
+    <script>
+        var valor = prompt("Qual o valor? ");
+        valor = parseFloat(valor);
+
+        document.write("Valor inserido: " + valor + "<br>");
+
+        if (valor >= 100){
+            desc = valor * 0.05
+            desc = valor - desc
+            document.write("O desconto será de 5%" + "<br> Valor descontado: " + desc);
+        }
+        else{
+            desc = valor * 0.03
+            desc = valor - desc
+            document.write("O desconto será de 3%" + "<br> Valor descontado: " + desc);
+        }
+        
+    </script>
+    </div>
+
+</body>
+</html>

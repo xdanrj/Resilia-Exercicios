@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            
+        }
+        .pag{
+            color: white;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="pag">
+    <script>
+        var idade = 0
+        
+        idade = prompt("Insira sua idade: ");
+        idade = parseInt(idade);
+        permissao();
+
+        function permissao(){
+            if (idade < 16){
+                document.write("NÃO PODE VOTAR NEM DIRIGIR");
+            }
+            else if (idade >=70){
+                document.write("VOTO FACULTATIVO");
+            }
+            else if (idade >=16 && idade<18){
+                document.write("PODE APENAS VOTAR");
+            }
+            else if (idade >=18){
+                document.write("PODE VOTAR E DIRIGIR");
+            }
+        }
+
+
+       
+       
+    
+    </script>
+    </div>
+
+</body>
+</html>

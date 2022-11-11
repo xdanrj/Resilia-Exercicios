@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            
+        }
+        .pag{
+            color: white;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="pag">
+    <script>
+        var n1 = prompt("Nota 1: ");
+        var n2 = prompt("Nota 2: ");
+        n1 = parseFloat(n1);
+        n2 = parseFloat(n2);
+        md = (n1+n2)/2;
+        document.write("A média é: " + md + "<br>");
+
+        if (md >=7){
+            document.write("APROVADO!");
+        }
+        else if (md < 5){
+            document.write("REPROVADO")
+        }
+        else{
+            document.write("RECUPERACAO");
+        }
+        
+    
+    </script>
+    </div>
+
+</body>
+</html>
