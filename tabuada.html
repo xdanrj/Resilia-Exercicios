@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO</title>
+    <style>body{background-color: black;} .pag{color: white;font-size: 1.5rem;}</style>
+</head>
+<body>
+    <div class="pag">
+        <script>
+            num = prompt("Digite um número: ");
+            document.write("Tabuada de "+num+" (usando WHILE)<br>");
+            var cont = 0;
+            while(cont<=10){
+                document.write(num +" x "+ cont +" = "+ num*cont);
+                document.write("<br>");
+                cont++;
+            }
+
+            document.write("<br>");
+            
+            document.write("Tabuada de "+num+" (usando FOR)<br>");
+            for(c=1; c<11; c++){
+                document.write(num +" x "+ c +" = "+ num*c);
+                document.write("<br>");
+            }
+            
+        </script>
+    </div>
+</body>
+</html>
