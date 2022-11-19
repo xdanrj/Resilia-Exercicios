@@ -9,21 +9,25 @@ font-size: 1rem;
 body{
     background-color: grey;
 }
-#c1, #c2, #c3, #c4{
+#c1{
+    background-color: red;
     width: 50%;
     height: 50%;
 }
-#c1{
-    background-color: red;
-}
 #c2{
     background-color: yellow;
+    width: 50%;
+    height: 50%;
 }
 #c3{
     background-color: green;
+    width: 50%;
+    height: 50%;
 }
 #c4{
-    background-color: blue;  
+    background-color: blue;
+    width: 50%;
+    height: 50%;    
 }
 h2{
     -webkit-text-stroke-width: 0.01rem;
